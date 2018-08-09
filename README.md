@@ -2,7 +2,7 @@
 
 A modular, loosely-coupled web application, following the SOLID principles, built using ASP.NET Core 2.1 & Angular 5. It demonstrates the "Clean architecture".
 
-The motivation for choosing the Clean architecture is that I believe it is one of the best approaches to designing web application today. It directly addresses and solves the main problem with the traditional "N-layer" architecture which was so dominant in the past years(most of the .NET projects I've witnessed have been built using this approach). The problem with the N-layer approach is that compile-time dependencies run vertically from the top layer to the bottom layer. That means that the UI layer directly depends on the BLL(Business Logic Layer), which in turn directly depends on the DAL(Data Access Layer).
+The motivation for choosing the Clean architecture is that I believe it is one of the best approaches to designing web applications today. It directly addresses and solves the main problem with the traditional "N-layer" architecture which was so dominant in the past years(most of the .NET projects I've witnessed have been built using this approach). The problem with the N-layer approach is that compile-time dependencies run vertically from the top layer to the bottom layer. That means that the UI layer directly depends on the BLL(Business Logic Layer), which in turn directly depends on the DAL(Data Access Layer).
 
 This means that the main application logic(which is contained in the BLL) will always depend on the existence of a database, which makes testing extremely hard. One approach often used to approach this problem is using Dependency Injection together with some Mocking functionality(they often go together with a Unit Testing Framework). 
 
