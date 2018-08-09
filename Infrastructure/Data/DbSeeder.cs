@@ -18,8 +18,7 @@ namespace Infrastructure.Data
             }
         }
 
-        private static async Task CreateUsers(AppDbContext dbContext, RoleManager<IdentityRole> roleManager,
-UserManager<ApplicationUser> userManager)
+        private static async Task CreateUsers(AppDbContext dbContext, RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager)
         {
             DateTime createdDate = new DateTime(2018, 07, 01, 12, 30, 00);
             DateTime lastModifiedDate = DateTime.Now;

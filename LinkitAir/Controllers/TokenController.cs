@@ -32,15 +32,12 @@ namespace LinkitAir.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Jwt([FromBody]TokenRequestViewModel model)
         {
-            // return a generic HTTP Status 500 (Server Error)
-            // if the client payload is invalid.
             if (model == null) return new StatusCodeResult(500);
             switch (model.grant_type)
             {
                 case "password":
                     return await GetToken(model);
                 default:
-                    // not supported - return a HTTP 401 (Unauthorized)
                     return new UnauthorizedResult();
             }
         }
@@ -49,17 +46,13 @@ namespace LinkitAir.Controllers
         {
             try
             {
-                // check if there's an user with the given username
                 var user = await UserManager.FindByNameAsync(model.username);
-                // fallback to support e-mail address instead of username
                 if (user == null && model.username.Contains("@"))
                     user = await UserManager.FindByEmailAsync(model.username);
                 if (user == null || !await UserManager.CheckPasswordAsync(user, model.password))
                 {
-                    // user does not exists or password mismatch
                     return new UnauthorizedResult();
                 }
-                // username & password matches: create and return the Jwt token.
 
                 DateTime now = DateTime.UtcNow;
                 // add the registered claims for JWT (RFC7519).
@@ -91,7 +84,6 @@ namespace LinkitAir.Controllers
 
                 var encodedToken = new
                 JwtSecurityTokenHandler().WriteToken(token);
-                // build & return the response
                 var response = new TokenResponseViewModel()
                 {
                     token = encodedToken,
