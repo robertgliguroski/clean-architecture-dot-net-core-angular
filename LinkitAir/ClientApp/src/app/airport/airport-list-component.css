@@ -1,0 +1,72 @@
+.airport-list-form, .flight-result-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+
+.flight-wrapper{
+  margin-top: 20px;
+}
+
+.main-card {
+  max-width: 300px;
+  width: 45%;
+  float: left;
+}
+
+.main-card-toggle {
+  max-width: 80px;
+  width: 10%;
+  float: left;
+}
+
+.flight-result-card{
+  max-width: 400px;
+  width: 40%;
+  float: left;
+}
+
+  .flight-result-card span{
+    display: block;
+    text-align: left;
+  }
+
+  .flight-result-price-card {
+    max-width: 120px;
+    width: 20%;
+    float: left;
+  }
+
+.check-alternative-label{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-alt-wrapper{
+  margin-bottom: 20px;
+}
+
+.main-card.left {
+}
+
+  .main-card.right {
+  }
+
+  .airport-list-field {
+    /*width: 40%;
+  margin: 2%;
+  display: inline-block;*/
+  }
+
+.origin-airport{
+}
+
+.destination-airport{
+}

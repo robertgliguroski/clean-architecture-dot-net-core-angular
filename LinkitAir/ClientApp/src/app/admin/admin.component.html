@@ -1,0 +1,74 @@
+<h2>Admin panel</h2>
+
+
+<div class="card-wrapper">
+  <mat-card class="admin-card total-requests" *ngIf="requestStats">
+    <mat-card-header>
+      <mat-card-title>Total number of requests processed</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{requestStats.count}}
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="admin-card status-ok" *ngIf="noOfRequestsByStatus['200']">
+    <mat-card-header>
+      <mat-card-title>Number of requests resulting in Status: 200</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{noOfRequestsByStatus['200']}}
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="admin-card status-four" *ngIf="noOfRequestsStartingWith['4']">
+    <mat-card-header>
+      <mat-card-title>Number of requests resulting in Status: 4xx</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{noOfRequestsStartingWith['4']}}
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="admin-card status-five" *ngIf="noOfRequestsStartingWith['5']">
+    <mat-card-header>
+      <mat-card-title>Number of requests resulting in Status: 5xx</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{noOfRequestsStartingWith['5']}}
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="card-wrapper">
+  <mat-card class="admin-card left stats-card" *ngIf="requestStats">
+    <mat-card-header>
+      <mat-card-title>Average response time</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{requestStats.average}} seconds
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="admin-card left stats-card" *ngIf="requestStats">
+    <mat-card-header>
+      <mat-card-title>Minimum response time</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{requestStats.min}} seconds
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="admin-card left stats-card" *ngIf="requestStats">
+    <mat-card-header>
+      <mat-card-title>Maximum response time</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{requestStats.max}} seconds
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="noOfRequestsByResponseCode" class="card-wrapper">
+    <mat-card class="admin-card by-code" *ngFor="let stat of noOfRequestsByResponseCode">
+      <mat-card-header>
+        <mat-card-title> Status: {{stat.responseStatusCode}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        {{stat.numberOfRequestPerResponseCode}} requests
+      </mat-card-content>
+    </mat-card>
+  </div>

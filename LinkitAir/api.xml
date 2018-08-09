@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LinkitAir</name>
+    </assembly>
+    <members>
+        <member name="M:LinkitAir.Controllers.AdminController.CountRequests">
+            <summary>
+            Counts all the processed requests
+            </summary>
+            <remarks>
+            Returns the total number of requests processed by the application
+            </remarks>
+        </member>
+        <member name="M:LinkitAir.Controllers.AirportController.GetAirports">
+            <summary>
+            Returns all the airport records
+            </summary>
+            <remarks>
+            Lists all the airport records in our database, without any filtering
+            </remarks>
+            <response code="200">OK</response>
+        </member>
+        <member name="M:LinkitAir.Controllers.AirportController.GetDestinationAirports(System.Int32)">
+            <summary>
+            Returns all the destination airports for this origin
+            </summary>
+            <remarks>
+            Lists all the airports that the selected airports has flights to
+            </remarks>
+            <param name="originAirportId"></param>
+            <response code="200">OK</response>
+        </member>
+        <member name="M:LinkitAir.Controllers.FlightController.GetFlightForOriginAndDestinationAndDate(System.Int32,System.Int32,System.String)">
+            <summary>
+            Returns the flight for the given origin, destination and flight date combination
+            </summary>
+            <remarks>
+            Gets the  flight from the chosen Origin Airport to the chosen Destination Airport on the chosen date
+            </remarks>
+            <param name="originAirportId"></param>
+            <param name="destinationAirportId"></param>
+            <param name="flightDate"></param>
+            <response code="200">OK</response>
+        </member>
+        <member name="M:LinkitAir.Controllers.FlightController.GetFlightsForOriginAndDestination(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Returns all the flights for the given origin, destination combination
+            </summary>
+            <remarks>
+            Lists all the flights from the chosen Origin Airport to the chosen Destination Airport on the chosen date
+            </remarks>
+            <param name="originAirportId"></param>
+            <param name="destinationAirportId"></param>
+            <param name="returnTicket"></param>
+            <response code="200">OK</response>
+        </member>
+        <member name="M:LinkitAir.Controllers.FlightController.GetAlternativeFlightsFromAndToSelectedCities(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Returns all the alternative flights for the selected combination
+            </summary>
+            <remarks>
+            Lists all the alternative flights from/to other airports in the same cities(if the city has multiple airports)
+            </remarks>
+            <param name="originAirportId"></param>
+            <param name="destinationAirportId"></param>
+            <param name="originalResultFlightInstanceId"></param>
+            <param name="returnTicket"></param>
+            <response code="200">OK</response>
+        </member>
+        <member name="M:LinkitAir.Controllers.TokenController.Jwt(LinkitAir.ViewModels.TokenRequestViewModel)">
+            <summary>
+            Authenticates the user
+            </summary>
+            <param name="model">TokenRequestViewModel</param>
+            <response code="200">OK</response>
+            <response code="500">If the client payload is invalid</response>
+        </member>
+    </members>
+</doc>

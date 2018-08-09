@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLinkActive]="['link-active']" [routerLink]="['/admin']">
+        <span>
+          <mat-icon>build</mat-icon>
+          <span>Admin</span>
+        </span>
+      </button>
+      <button mat-menu-item [routerLinkActive]="['link-active']" [routerLink]="['']">
+        <span>
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </span>
+      </button>
+      <button *ngIf="this.auth.isLoggedIn()" mat-menu-item (click)="logout()">
+        <span >
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Log out</span>
+        </span>
+      </button>
+    </mat-menu>
+  </span>
+  <span fill-remaining-space>LinkitAir</span>
+</mat-toolbar>
+<router-outlet></router-outlet>

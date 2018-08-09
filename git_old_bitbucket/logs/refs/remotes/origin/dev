@@ -1,0 +1,49 @@
+ae06107ac37790f36b96498d8433a769a05e53f8 cce25d9f50030668e69542c5d2f7c24d252027b9 robert.gliguroski <robert.gliguroski@gmail.com> 1531386640 +0200	update by push
+cce25d9f50030668e69542c5d2f7c24d252027b9 72c7eecd9a6a78a446705c4e7583dcd9a24f2a4d robert.gliguroski <robert.gliguroski@gmail.com> 1531386715 +0200	update by push
+72c7eecd9a6a78a446705c4e7583dcd9a24f2a4d ee4dc946a0ba3cb86fed92355e174bafb3cb9b17 robert.gliguroski <robert.gliguroski@gmail.com> 1531387430 +0200	update by push
+ee4dc946a0ba3cb86fed92355e174bafb3cb9b17 ea5238b1638e768bb3932416ad67c1705ae3be69 robert.gliguroski <robert.gliguroski@gmail.com> 1531404754 +0200	update by push
+ea5238b1638e768bb3932416ad67c1705ae3be69 f797a12fbae49e6f061d736a05fd490eb322749e robert.gliguroski <robert.gliguroski@gmail.com> 1531408898 +0200	update by push
+f797a12fbae49e6f061d736a05fd490eb322749e fff67dac721488e388a646173fb4239dcc64618c robert.gliguroski <robert.gliguroski@gmail.com> 1531430293 +0200	update by push
+fff67dac721488e388a646173fb4239dcc64618c 4796e2bd1d500e2534ef05eba78619f73f4f78d0 robert.gliguroski <robert.gliguroski@gmail.com> 1531468352 +0200	update by push
+4796e2bd1d500e2534ef05eba78619f73f4f78d0 1dcf441cb9bc6dc9bcf708e7b50ce57d31434e13 robert.gliguroski <robert.gliguroski@gmail.com> 1531564798 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+1dcf441cb9bc6dc9bcf708e7b50ce57d31434e13 0088ed1e9fbf9d5677513f957a4ea2369e0d59fa robert.gliguroski <robert.gliguroski@gmail.com> 1531564920 +0200	update by push
+0088ed1e9fbf9d5677513f957a4ea2369e0d59fa da979b21b9631727c7f3ffc40f633d830e18241d robert.gliguroski <robert.gliguroski@gmail.com> 1531572231 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+da979b21b9631727c7f3ffc40f633d830e18241d cbf6d2482ab5e4c276100d7307fea92748228314 robert.gliguroski <robert.gliguroski@gmail.com> 1531572342 +0200	update by push
+cbf6d2482ab5e4c276100d7307fea92748228314 a4c606f8e79d34ebf143bfc432d028341d9a7322 robert.gliguroski <robert.gliguroski@gmail.com> 1531572890 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+a4c606f8e79d34ebf143bfc432d028341d9a7322 dc6cc03127e502deccfbba5f53ca8ee9a37ea042 robert.gliguroski <robert.gliguroski@gmail.com> 1531596814 +0200	update by push
+dc6cc03127e502deccfbba5f53ca8ee9a37ea042 3284eca8ce10ffd48490a7e17454ee3b89b11dda robert.gliguroski <robert.gliguroski@gmail.com> 1531597019 +0200	update by push
+3284eca8ce10ffd48490a7e17454ee3b89b11dda e217d4585ba70534f8148b8e3cac969051e6e596 robert.gliguroski <robert.gliguroski@gmail.com> 1531615218 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+e217d4585ba70534f8148b8e3cac969051e6e596 c65bcdbf15d4f0238630199ebd63f09b6d115256 robert.gliguroski <robert.gliguroski@gmail.com> 1531615645 +0200	update by push
+c65bcdbf15d4f0238630199ebd63f09b6d115256 c65bc10c991419f233a783eebb14208229fcfc4f robert.gliguroski <robert.gliguroski@gmail.com> 1531654064 +0200	update by push
+c65bc10c991419f233a783eebb14208229fcfc4f 6743dacecf087295b3b961a43320363d0414e8dc robert.gliguroski <robert.gliguroski@gmail.com> 1531696394 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+6743dacecf087295b3b961a43320363d0414e8dc 025d7b6361fbc62a21faf8a97c30835fbca012c1 robert.gliguroski <robert.gliguroski@gmail.com> 1531696400 +0200	update by push
+025d7b6361fbc62a21faf8a97c30835fbca012c1 c46c4478c8a96cf5ec2b3b8939741be6103c2f50 robert.gliguroski <robert.gliguroski@gmail.com> 1531725670 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+c46c4478c8a96cf5ec2b3b8939741be6103c2f50 07b08f793a7595e3e117062636a86b569b51a6a3 robert.gliguroski <robert.gliguroski@gmail.com> 1531725765 +0200	update by push
+07b08f793a7595e3e117062636a86b569b51a6a3 9537492d71e550a12926952cda459ca010770602 robert.gliguroski <robert.gliguroski@gmail.com> 1531726909 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+9537492d71e550a12926952cda459ca010770602 16474647e50ab83fc71c87d3c30c9757aa11c8fa robert.gliguroski <robert.gliguroski@gmail.com> 1531758718 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+16474647e50ab83fc71c87d3c30c9757aa11c8fa 87e0a338f73c77bae1f8139b334b64ebf9f32b7b robert.gliguroski <robert.gliguroski@gmail.com> 1531760274 +0200	update by push
+87e0a338f73c77bae1f8139b334b64ebf9f32b7b 4888a76f7e0a736263ac43dab8446a1dc7e119c1 robert.gliguroski <robert.gliguroski@gmail.com> 1531766865 +0200	update by push
+4888a76f7e0a736263ac43dab8446a1dc7e119c1 05a97429da9733b0529b315293302c23d3c254d3 robert.gliguroski <robert.gliguroski@gmail.com> 1531767121 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+05a97429da9733b0529b315293302c23d3c254d3 923987e9ffae297f7259f7c0a4694af9732f1b07 robert.gliguroski <robert.gliguroski@gmail.com> 1531782697 +0200	update by push
+923987e9ffae297f7259f7c0a4694af9732f1b07 881efbae31cb58fc0ea1753c39088d163a088824 robert.gliguroski <robert.gliguroski@gmail.com> 1531783144 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+881efbae31cb58fc0ea1753c39088d163a088824 b60d404addc56f3c0e4a95339ea27f9d7a9ceaf0 robert.gliguroski <robert.gliguroski@gmail.com> 1531783150 +0200	update by push
+b60d404addc56f3c0e4a95339ea27f9d7a9ceaf0 934eb902d5eef928b801e99d8f860bb16dc66711 robert.gliguroski <robert.gliguroski@gmail.com> 1531808522 +0200	update by push
+934eb902d5eef928b801e99d8f860bb16dc66711 f3bf839dc087b936a0d685cb23b8351f97cb8b34 robert.gliguroski <robert.gliguroski@gmail.com> 1531865916 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+f3bf839dc087b936a0d685cb23b8351f97cb8b34 84fb4b091d855a5d292187df54132ab09be8802a robert.gliguroski <robert.gliguroski@gmail.com> 1531866239 +0200	update by push
+84fb4b091d855a5d292187df54132ab09be8802a fcea601db061ecf87754e3cca88390b24c90f768 robert.gliguroski <robert.gliguroski@gmail.com> 1531867084 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+fcea601db061ecf87754e3cca88390b24c90f768 6b22592794a12f203c22fbf478b2a304852df98e robert.gliguroski <robert.gliguroski@gmail.com> 1531894211 +0200	update by push
+6b22592794a12f203c22fbf478b2a304852df98e acd1f27fce939cdbde0c251fdc97df8038cc3e7a robert.gliguroski <robert.gliguroski@gmail.com> 1531956479 +0200	update by push
+acd1f27fce939cdbde0c251fdc97df8038cc3e7a 17a4c88326f3a3753c86e5ebc8f5c6c9190d3ce0 robert.gliguroski <robert.gliguroski@gmail.com> 1532019099 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+17a4c88326f3a3753c86e5ebc8f5c6c9190d3ce0 e337930625c38d3f50ca9861da2a36b4a0c72293 robert.gliguroski <robert.gliguroski@gmail.com> 1532181948 +0200	update by push
+e337930625c38d3f50ca9861da2a36b4a0c72293 b31cba380313c6dacf2cc27b726d9d20be27b10c robert.gliguroski <robert.gliguroski@gmail.com> 1532208339 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+b31cba380313c6dacf2cc27b726d9d20be27b10c dfbb3c53ac48f01e39027a703882cc559fd15f27 robert.gliguroski <robert.gliguroski@gmail.com> 1532208344 +0200	update by push
+dfbb3c53ac48f01e39027a703882cc559fd15f27 f1d6901328999f4f5b3d4a48d9b2211cdb1fb638 robert.gliguroski <robert.gliguroski@gmail.com> 1532215116 +0200	update by push
+f1d6901328999f4f5b3d4a48d9b2211cdb1fb638 2664ee1a561a476b77681f65418388f88f7f4673 robert.gliguroski <robert.gliguroski@gmail.com> 1532269163 +0200	update by push
+2664ee1a561a476b77681f65418388f88f7f4673 982dbb9db901d5106704855b3f510970c3aefb88 robert.gliguroski <robert.gliguroski@gmail.com> 1532278139 +0200	update by push
+982dbb9db901d5106704855b3f510970c3aefb88 2841980dc08c96e0f8052944f5dfa1250ec58ab7 robert.gliguroski <robert.gliguroski@gmail.com> 1532284092 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+2841980dc08c96e0f8052944f5dfa1250ec58ab7 5c056b5e90f1129d0661dbf058e9b99618ee7b23 robert.gliguroski <robert.gliguroski@gmail.com> 1532284097 +0200	update by push
+5c056b5e90f1129d0661dbf058e9b99618ee7b23 c0e84a80c7d1f352ae39153ba11bd1a76dfa284c robert.gliguroski <robert.gliguroski@gmail.com> 1532285274 +0200	update by push
+c0e84a80c7d1f352ae39153ba11bd1a76dfa284c 3d537bdc4c3649378af821771d5c7e93d681449b robert.gliguroski <robert.gliguroski@gmail.com> 1532290612 +0200	update by push
+3d537bdc4c3649378af821771d5c7e93d681449b 840ef31be0343a064e39151181b245c024a47dc0 robert.gliguroski <robert.gliguroski@gmail.com> 1532292636 +0200	update by push
+840ef31be0343a064e39151181b245c024a47dc0 dc7a3188f71d8813c3b6434f31b3174a883708ea robert.gliguroski <robert.gliguroski@gmail.com> 1532299380 +0200	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: fast-forward
+dc7a3188f71d8813c3b6434f31b3174a883708ea e7552bb53ab41a0d09d89a7404bd4a5cb203a170 robert.gliguroski <robert.gliguroski@gmail.com> 1532299385 +0200	update by push

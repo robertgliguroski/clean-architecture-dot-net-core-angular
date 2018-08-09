@@ -1,0 +1,81 @@
+<form class="airport-list-form">
+  <div class="card-wrapper">
+    <mat-card class="main-card left">
+      <mat-form-field class="airport-list-field origin-airport">
+        <input matInput [(ngModel)]="selectedOrigin" placeholder="Origin Airport" aria-label="Origin Airport"
+               [formControl]="originAirportsCtrl" [matAutocomplete]="auto1">
+        <mat-autocomplete #auto1="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let originAirport of filteredOriginAirports | async" [value]="originAirport" (onSelectionChange)="onOriginSelected(originAirport)">
+            {{ originAirport.name }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </mat-card>
+    <mat-card class="main-card right">
+      <mat-form-field class="airport-list-field destination-airport">
+        <input matInput [(ngModel)]="selectedDestination" placeholder="Destination Airport" aria-label="Destination Airport"
+               [formControl]="destinationAirportsCtrl" [matAutocomplete]="auto2">
+        <mat-autocomplete #auto2="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let destinationAirport of filteredDestinationAirports | async" [value]="destinationAirport" (onSelectionChange)="onDestinationSelected(destinationAirport)">
+            {{ destinationAirport.name }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </mat-card>
+    <div>
+      <mat-slide-toggle name="returnTicket" color="primary" [(ngModel)]="returnChecked">Return ticket</mat-slide-toggle>
+    </div>
+  </div>
+  <div class="card-wrapper">
+    <button mat-raised-button color="primary" (click)="searchFlightsOriginDestination()">Search</button>
+  </div>
+</form>
+
+
+<!--   <input type="text" [(ngModel)]="flightDate" id="flightDate" />
+   <button mat-button (click)="getFlightWithDate()">Search with date</button> -->
+
+
+<div *ngIf="flightsOriginDestination && flightsOriginDestination.length > 0" class="flight-result-container">
+  <div *ngFor="let flight of flightsOriginDestination" class="card-wrapper flight-wrapper">
+    <mat-card class="flight-result-card">
+      <span>Flight code: {{flight.flightCode}} </span>
+      <span>From: {{flight.originAirportName}}, {{flight.originCityName}}</span>
+      <span>Departure: {{flight.departureTime}} </span>
+    </mat-card>
+    <mat-card class="flight-result-card">
+      <span>To: {{flight.destinationAirportName}}, {{flight.destinationCityName}}</span>
+      <span>Arrival: {{flight.arrivalTime}} </span>
+    </mat-card>
+    <mat-card class="flight-result-price-card">
+      <span>Price: {{flight.price}} </span>
+    </mat-card>
+  </div>
+  <div *ngIf="flightsOriginDestination.length == 1 && wasCheckedReturn">
+    <span>We're sorry, but there aren't any return flights for the selected combination</span>
+  </div>
+
+  <div class="card-wrapper check-alternative-label">
+    <span>Check these alternative flights from/to other airports in the selected cities:</span><br />
+ </div>
+  <div class="card-wrapper search-alt-wrapper">
+    <button mat-raised-button color="primary" (click)="searchAlternativeFlights(flightsOriginDestination[0].flightInstanceId)">Search</button>
+  </div>
+  </div>
+
+  <div *ngIf="alternativeFlights && alternativeFlights.length > 0" class="flight-result-container">
+    <div *ngFor="let flight of alternativeFlights" class="card-wrapper flight-wrapper">
+      <mat-card class="flight-result-card">
+        <span>Flight code: {{flight.flightCode}} </span>
+        <span>From: {{flight.originAirportName}}, {{flight.originCityName}}</span>
+        <span>Departure: {{flight.departureTime}} </span>
+      </mat-card>
+      <mat-card class="flight-result-card">
+        <span>To: {{flight.destinationAirportName}}, {{flight.destinationCityName}}</span>
+        <span>Arrival: {{flight.arrivalTime}} </span>
+      </mat-card>
+      <mat-card class="flight-result-price-card">
+        <span>Price: {{flight.price}} </span>
+      </mat-card>
+    </div>
+  </div>

@@ -1,0 +1,43 @@
+h2{
+  text-align: center;
+}
+.card-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-card {
+  max-width: 300px;
+  width: 25%;
+  float: left;
+  margin-left: 20px;
+}
+
+.status-ok {
+  background-color: #77dd91;
+}
+
+.status-four {
+  background-color: #ff8080;
+}
+
+.status-five {
+  background-color: #ff3434;
+}
+
+.by-code {
+  background-color: #A9CCE3;
+}
+
+.stats-card {
+  background-color: #D7BDE2;
+}
+
+.total-requests {
+  background-color: #565656b3;
+  color: beige;
+}
