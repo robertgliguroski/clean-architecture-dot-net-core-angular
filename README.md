@@ -1,4 +1,4 @@
-## LinkitAir - Clean architecture with ASP.NET Core and Angular
+# LinkitAir - Clean architecture with ASP.NET Core and Angular
 
 A modular, loosely-coupled web application, following the SOLID principles, built using ASP.NET Core 2.1 & Angular 5. It demonstrates the "Clean architecture".
 
@@ -24,3 +24,29 @@ The following provides a simple layout of a web application organized by the pri
 * Core project: Holds the Interfaces(for both Services and Repositories), Entities and the actual Services(which hold the business logic but rely on Interfaces and do not depend on types defined in Infrastructure), Specifications, Exceptions. Additional services which require infrastructure-related classes should also have their Interfaces here, but they will be implemented in the Infrastructure layer
 * Infrastructure project: Contains implementations related to data access, such as: Entity Framework DbCOntext, Data Migrations and data access code, most often classes following the Repository pattern(i.e. Repositories). Interfaces for services that require classes related to Infrastructure(files, logging etc.) should be implemented here, by the appropriate class implementations
 * UI project - Contains the Controllers, Views, ViewModels etc., all of which must not interact with Infrastructure directly, but strictly through interfaces defined in the Core layer. In practice this means that we will not have any instantiation of types defined in Infrastructure
+
+## Business logic
+
+This is a sample web application for a fictitious airline. It provides the users with a way to search for flights from the desired origin airport to the desired destination airport. It will list all the available flights with their price.
+
+It will also offer alternative flights from other airports in the same city where the origin/destination airports are located.
+
+The application logs each request made to the server in a custom middleware and offers the following basic statistics for the admin users:
+
+* Total number of requests processed
+* Total number of requests resulting in an OK, 4xx and 5xx responses
+* Number of requests grouped by exact response status code(e.g. 200, 201, 401, 404, 500 etc.)
+* Average response time of all requests 
+* Minimum response time of all requests
+* Maximum response time of all requests
+
+## Technology stack
+
+* ASP.NET Core 2.1
+* Angular 5
+* Angular Material (v. 5.2.4)
+* Entity Framework Core (Code First)
+* ASP.NET Core Identity
+* JSON Web Tokens (JWT)
+* Sql Server 2017 Express
+* Swagger (via Swashbuckle)
