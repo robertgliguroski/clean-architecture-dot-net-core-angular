@@ -17,12 +17,12 @@ This means that we will be creating a lot of Interfaces and put them in the Core
 This provides us with two major benefits:
 
 * The Core does not depend on Infrastructure, so we can easily write unit tests(and automated unit tests) for this layer(and test the bulk of the business logic)
-* the UI layer does not depend on Infrastructure, so it is ery easy to swap implementations(e.g. in the Controllers) for testing purposes
+* the UI layer does not depend on Infrastructure, so it is very easy to swap implementations(e.g. in the Controllers) for testing purposes
 
 The following provides a simple layout of a web application organized by the principles defined in the Clean architecture:
 
 * Core project: Holds the Interfaces(for both Services and Repositories), Entities and the actual Services(which hold the business logic but rely on Interfaces and do not depend on types defined in Infrastructure), Specifications, Exceptions. Additional services which require infrastructure-related classes should also have their Interfaces here, but they will be implemented in the Infrastructure layer
-* Infrastructure project: Contains implementations related to data access, such as: Entity Framework DbCOntext, Data Migrations and data access code, most often classes following the Repository pattern(i.e. Repositories). Interfaces for services that require classes related to Infrastructure(files, logging etc.) should be implemented here, by the appropriate class implementations
+* Infrastructure project: Contains implementations related to data access, such as: Entity Framework DbContext, Data Migrations and data access code, most often classes following the Repository pattern(i.e. Repositories). Interfaces for services that require classes related to Infrastructure(files, logging etc.) should be implemented here, by the appropriate class implementations
 * UI project - Contains the Controllers, Views, ViewModels etc., all of which must not interact with Infrastructure directly, but strictly through interfaces defined in the Core layer. In practice this means that we will not have any instantiation of types defined in Infrastructure
 
 ## Business logic
